@@ -1,5 +1,5 @@
---local capabilities = vim.lsp.protocol.make_client_capabilities()
---capabilities = require('cmp_nvim_lsp').default_capabilities(capabilities)
+local capabilities = vim.lsp.protocol.make_client_capabilities()
+capabilities = require('cmp_nvim_lsp').default_capabilities(capabilities)
 
 -- Sntup language servers.
 local lspconfig = require('lspconfig')
@@ -11,17 +11,6 @@ lspconfig.ccls.setup {
     };
   }
 }
-lspconfig.gopls.setup({
-  settings = {
-    gopls = {
-      analyses = {
-        unusedparams = true,
-      },
-      staticcheck = true,
-      gofumpt = true,
-    },
-  },
-})
 lspconfig.rust_analyzer.setup {
   settings = {
     ['rust-analyzer'] = {
@@ -35,8 +24,6 @@ lspconfig.rust_analyzer.setup {
   },
 }
 lspconfig.jsonls.setup {}
-lspconfig.java_language_server.setup {}
-lspconfig.csharp_ls.setup {}
 lspconfig.lua_ls.setup {}
 
 -- Global mappings.
