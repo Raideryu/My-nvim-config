@@ -23,6 +23,7 @@ lspconfig.rust_analyzer.setup {
     },
   },
 }
+lspconfig.pyright.setup {}
 lspconfig.jsonls.setup {}
 lspconfig.lua_ls.setup {}
 

@@ -7,7 +7,9 @@ null_ls.setup({
             "go",
             "java",
             "c_sharp",
-            "c"
+            "c",
+            "rust",
+            "python",
         } },
         null_ls.builtins.formatting.lua_format,
         null_ls.builtins.diagnostics.eslint_d,
@@ -20,6 +22,8 @@ null_ls.setup({
         "yaml",
         "markdown",
         "markdown.mdx",
+        "rs",
+        "py",
     },
 }
     },
