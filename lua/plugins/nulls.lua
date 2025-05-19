@@ -10,6 +10,8 @@ null_ls.setup({
             "c",
             "rust",
             "python",
+            "bash",
+            "yaml",
         } },
         null_ls.builtins.formatting.lua_format,
         null_ls.builtins.diagnostics.eslint_d,
@@ -24,6 +26,8 @@ null_ls.setup({
         "markdown.mdx",
         "rs",
         "py",
+        "sh",
+        "yml",
     },
 }
     },

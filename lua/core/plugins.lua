@@ -28,5 +28,11 @@ require("lazy").setup ({
     {'hrsh7th/cmp-cmdline'}, {'hrsh7th/nvim-cmp'},
     {"williamboman/mason.nvim", build = ":MasonUpdate"},
     {'nvim-telescope/telescope.nvim', tag = '0.1.6', dependencies = { 'nvim-lua/plenary.nvim' }},
-    {'jose-elias-alvarez/null-ls.nvim'}
+    {'jose-elias-alvarez/null-ls.nvim'},
+    {
+        "iamcco/markdown-preview.nvim",
+        cmd = { "MarkdownPreviewToggle", "MarkdownPreview", "MarkdownPreviewStop" },
+        ft = { "markdown" },
+        build = function() vim.fn["mkdp#util#install"]() end,
+    },
 })
